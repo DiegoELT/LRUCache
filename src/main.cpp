@@ -15,12 +15,4 @@ int main()
   sampleCache -> getValueFromKey("b");
   sampleCache -> insertKeyValuePair("a",5);
   std::cout << "The value from key 'a' is: " << *(sampleCache -> getValueFromKey("a")) << "\n";
-  /* sampleCache -> insertKeyValuePair(1, 'a');
-  sampleCache -> insertKeyValuePair(2, 'b');
-  sampleCache -> insertKeyValuePair(3, 'c');
-  sampleCache -> insertKeyValuePair(2, 'B');
-  sampleCache -> insertKeyValuePair(4, 'd');
-  std::cout << sampleCache -> getValueFromKey(2) << "\n";
-  std::cout << sampleCache -> getMostRecentKey() << "\n";
-  sampleCache -> debugFunc();*/
 }
