@@ -1,23 +1,15 @@
 #include <iostream>
 
 template <class KeyType, class DataType>
-class Node
+struct Node
 {
-  private:
     KeyType key;
     DataType data; 
-  public:
+    Node<KeyType, DataType> * prev = nullptr; 
+    Node<KeyType, DataType> * next = nullptr; 
     Node(KeyType _key, DataType _data)
     {
       key = _key;
       data = _data;
     }
-    KeyType getKey()
-    {
-      return key;
-    }
-    DataType getData()
-    {
-      return data;
-    };
 };
